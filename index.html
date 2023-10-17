@@ -17,13 +17,16 @@
                 <h2 v-text="product.title"></h2>
                 <p v-html="product.description"></p>
                 <p>Price: {{product.price}}</p>
+                <button v-on:click="addToCart">
+                    Add to cart
+                </button>
             </main>
+
         </div>
         
 
         <script type="text/javascript">
             var webstore = new Vue({
-                
                 el: '#app',
                 data: {
                     sitename: 'Vue.Js Pet Depot',
